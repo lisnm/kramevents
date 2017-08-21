@@ -1,0 +1,8 @@
+{
+    "database": {
+        "host": "localhost",
+        "name": "kramevents",
+        "username": "root",
+        "password": ""
+    }
+}
