@@ -1,0 +1,7 @@
+{
+  "config": {
+    "dsn": "mysql:dbname=id2441188_kramevents;host=localhost;charset=utf8",
+    "db_username": "id2441188_root",
+    "db_password": "123456"
+  }
+}
