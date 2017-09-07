@@ -1,11 +1,20 @@
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <?php
 
-$link = new PDO("mysql:dbname=id2441188_kramevents;host=localhost",
-    "id2441188_root",
-    "123456"
-); // создаем подключение
-$ret = $link->query("SELECT * FROM events");
+require_once("../app/base/Registry.php");
+
+use app\base\Registry;
+
+// получаем реестр
+$registry = Registry::instance();
+// получаем helper
+$helper = $registry->getConfigloader();
+// запускаем инициализацию
+$helper->init();
+// подключаемся к базе
+$pdo = $registry->getPdo();
+// запрос
+$ret = $pdo->query("SELECT * FROM events");
 $values = $ret->fetchAll();
 
 foreach ($values as $item):?>

@@ -8,11 +8,11 @@ namespace app\controllers\Front;
 
 require_once("Dispatcher.php");
 require_once("Router.php");
+require_once(__DIR__."/../base/Registry.php");
 
-
+use app\base\Registry;
 use app\controllers\Dispatcher\Dispatcher;
 use app\controllers\Router\Router;
-
 
 /**
  * Class Front
@@ -42,6 +42,12 @@ class Front
      */
     public function init()
     {
+        // получаем реестр
+        $registry = Registry::instance();
+        // получаем helper
+        $helper = $registry->getConfigloader();
+        // запускаем инициализацию
+        $helper->init();
     }
 
     /**

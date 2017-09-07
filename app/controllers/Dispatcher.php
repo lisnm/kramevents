@@ -10,6 +10,7 @@ require_once("Request.php");
 // TODO: реализовать автозагрузку согласно PSR-4
 require_once ("action/MainController.php");
 
+use App\Base\Registry;
 use app\controllers\Request\Request;
 
 /**
@@ -29,8 +30,14 @@ class Dispatcher
      * @param Request $request
      * @return bool|mixed
      */
-    public function dispatch(Request $request)
+    public function dispatch(Request $request = null)
     {
+        // если не задан запрос, получаем из реестра
+        if (is_null($request))
+        {
+            $registry = Registry::instance();
+            $request = $registry->getRequest();
+        }
         // получаем имена контроллера и действия
         $controllerName = $request->getController();
         $actionName = $request->getAction();

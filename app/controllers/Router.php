@@ -6,7 +6,9 @@
 namespace app\controllers\Router;
 
 require_once("Request.php");
+require_once("/../base/Registry.php");
 
+use app\base\Registry;
 use app\controllers\Request\Request;
 
 /**
@@ -66,6 +68,8 @@ class Router
         $find = array_keys($this->placeholders);
         $replace = array_values($this->placeholders);
 
+        // создаем пустой запрос
+        $request = new Request();
         foreach ($this->routes as $route => $handler) {
             // Replace wildcards by regex
             if (strpos($route, ':') !== false) {
@@ -79,11 +83,16 @@ class Router
                 $controller = $handler[0];
                 $action = $handler[1];
                 $params = array_slice($matches, 1);
-                $request = new Request($controller, $action, $params);
-                return $request;
+                $request->setController($controller);
+                $request->setAction($action);
+                $request->setParams($params);
+                $request->setMethod($this->method);
             }
         }
-        return new Request();
+        // сохраняем запрос в реестре
+        $registry = Registry::instance();
+        $registry->setRequest($request);
+        return $request;
     }
 
     /**
