@@ -2,8 +2,23 @@
 ====================
 ```
 .
+|-- app
+|   |-- controllers
+|   |   |-- action
+|   |   |   |-- ActionController.php
+|   |   |   `-- MainController.php
+|   |   |-- Dispatcher.php
+|   |   |-- Front.php
+|   |   |-- Request.php
+|   |   `-- Router.php
+|   |-- models
+|   |   |-- Database.php
+|   |   `-- Model.php
+|   `-- views
+|       `-- View.php
 |-- config
-|   `-- db.config.json
+|   |-- db.config.json
+|   `-- routes.config.php
 |-- database
 |   `-- kramevents.sql
 |-- docs
@@ -60,7 +75,7 @@
 |   |   |-- npm.js
 |   |   `-- scripts.js
 |   |-- index.php
-|   `-- index_old.php
+|   `-- test.php
 |-- templates
 |   |-- blocks
 |   |   |-- carousel.php
@@ -80,16 +95,19 @@
 |-- LICENSE
 `-- README.md
 
-11 directories, 66 files
+16 directories, 76 files
+
 ```
 :octocat: Ниже описаны назначение директорий и основных файлов.
 -------------------------------------------------------------------
-* application: Каталог приложения.
+* app: Каталог приложения.
     * _controllers_: Каталог MVC - контроллеры.
+        * _action_: Контроллеры действия
     * _models_: Каталог MVC - модели.
     * _views_: Каталог MVC - виды.
 * _config_: Каталог конфигурационных файлов приложения.
     * _db.config.json_: Конфигурационный файл базы данных
+    * _routes.config.php_: Правила маршрутизации.
 * _database_: Файлы базы данных.
     * _kramevents.sql_: Дамп базы данных (структура и данные).
 * _docs_: Этот каталог содержит документацию, сгенерированную или написаную вручную.
