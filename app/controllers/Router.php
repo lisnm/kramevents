@@ -3,17 +3,16 @@
  * Класс Router - отвечает за маршрутизацию запроса.
  */
 
-namespace app\controllers\Router;
+namespace App\Controllers;
 
 require_once("Request.php");
 require_once("/../base/Registry.php");
 
 use app\base\Registry;
-use app\controllers\Request\Request;
 
 /**
  * Class Router
- * @package app\controllers\Router
+ * @package App\Controllers
  */
 class Router
 {

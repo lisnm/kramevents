@@ -6,7 +6,7 @@ require_once("ConfigLoader.php");
 require_once(__DIR__."/../controllers/Request.php");
 require_once("Config.php");
 
-use App\Controllers\Request\Request;
+use App\Controllers\Request;
 
 /**
  * Class Registry

@@ -4,19 +4,17 @@
  * Реализует единую точку входа.
  */
 
-namespace app\controllers\Front;
+namespace App\Controllers;
 
 require_once("Dispatcher.php");
 require_once("Router.php");
 require_once(__DIR__."/../base/Registry.php");
 
 use app\base\Registry;
-use app\controllers\Dispatcher\Dispatcher;
-use app\controllers\Router\Router;
 
 /**
  * Class Front
- * @package app\controllers\Front
+ * @package App\Controllers
  */
 class Front
 {

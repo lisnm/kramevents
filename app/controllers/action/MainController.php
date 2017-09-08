@@ -8,7 +8,7 @@
 
 require_once("ActionController.php");
 
-use app\controllers\action\ActionController\ActionController;
+use App\Controllers\Action\ActionController;
 
 class MainController extends ActionController
 {

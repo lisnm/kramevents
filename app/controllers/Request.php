@@ -3,11 +3,11 @@
  *  Класс Request - хранит контроллер, действие  и параметры.
  */
 
-namespace app\controllers\Request;
+namespace App\Controllers;
 
 /**
  * Class Request
- * @package app\controllers\Request
+ * @package App\Controllers
  */
 
 class Request
@@ -18,7 +18,11 @@ class Request
     private $method;
 
     /**
-     * Request конструктор.
+     * Request constructor.
+     * @param null $controller
+     * @param null $action
+     * @param array $params
+     * @param string $method
      */
     public function __construct($controller = null, $action = null, $params = [], $method = 'GET')
     {

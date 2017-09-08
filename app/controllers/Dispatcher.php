@@ -3,7 +3,7 @@
  * Dispatcher - диспечеризация запроса.
  */
 
-namespace app\controllers\Dispatcher;
+namespace App\Controllers;
 
 require_once("Request.php");
 
@@ -11,11 +11,10 @@ require_once("Request.php");
 require_once ("action/MainController.php");
 
 use App\Base\Registry;
-use app\controllers\Request\Request;
 
 /**
  * Class Dispatcher
- * @package app\controllers\Dispatcher
+ * @package App\Controllers
  */
 class Dispatcher
 {

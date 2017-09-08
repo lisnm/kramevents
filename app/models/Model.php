@@ -3,7 +3,7 @@
  *
  */
 
-namespace app\models\Model;
+namespace App\Models;
 
 
 abstract class Model
