@@ -5,26 +5,26 @@
     <div class="container-fluid ">
         <div class="content">
             <div lass="row">
-                <?php foreach ($values['events'] as $itemx): ?>
+                <?php foreach ($values as $item): ?>
                     <div class="col-xs-6 col-sm-4 col-md-3">
                         <div class="thumbnail">
                             <div class="caption">
                                 <div class="event-title">
-                                    <h2><?= $itemx->title; ?></h2>
+                                    <h2><?= $item->getTitle(); ?></h2>
                                 </div>
                                 <div class="event-description">
-                                    <?= $itemx->category_name->category_name; ?>
+                                    <?= $item->getCategory(); ?>
                                 </div>
                                 <div class="event-date">
-                                    <h3><?= $itemx->date_start; ?></h3>
+                                    <h3><?= $item->getDateStart(); ?></h3>
                                 </div>
-                                <p><a href="?ctrl=event&act=one&id=<?= $itemx->id; ?>" class="label label-default">Узнать
+                                <p><a href="?ctrl=event&act=one&id=<?= $item->getId(); ?>" class="label label-default">Узнать
                                         больше</a></p>
                             </div>
                             <div class="event-picture">
                                 <div class="event-picture-wrap"
-                                     style="background-image: url('upload/<?= $itemx->pictures[0]->picture_url ?>');background-size: cover;">
-                                    <img src='upload/<?= $itemx->pictures[0]->picture_url ?>' alt="" title="">
+                                     style="background-image: url('upload/<?= $item->getPictures();?>');background-size: cover;">
+                                    <img src='upload/<?= $item->getPictures(); ?>' alt="" title="">
                                 </div>
                             </div>
                         </div>
@@ -35,4 +35,4 @@
                     </button>
                 </a>
             </div>
-<?php include "carousel.php"; ?>
+<!-- ?php include "carousel.php"; ?-->

@@ -3,19 +3,18 @@
  * Dispatcher - диспечеризация запроса.
  */
 
-namespace app\controllers\Dispatcher;
+namespace App\Controllers;
 
 require_once("Request.php");
 
 // TODO: реализовать автозагрузку согласно PSR-4
-require_once ("action/MainController.php");
+require_once("action/HomeController.php");
 
 use App\Base\Registry;
-use app\controllers\Request\Request;
 
 /**
  * Class Dispatcher
- * @package app\controllers\Dispatcher
+ * @package App\Controllers
  */
 class Dispatcher
 {

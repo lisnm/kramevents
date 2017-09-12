@@ -3,7 +3,7 @@
  *
  */
 
-namespace app\controllers\action\ActionController;
+namespace App\Controllers\Action;
 
 
 abstract class ActionController

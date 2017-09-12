@@ -3,7 +3,7 @@
  *
  */
 
-namespace app\models\Database;
+namespace App\Models;
 
 
 class Database

@@ -1,5 +1,4 @@
 <?php
 
 require_once "../app/controllers/Front.php";
-$front = \app\controllers\Front\Front::run();
-
+$front = \app\controllers\Front::run();

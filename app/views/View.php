@@ -3,7 +3,7 @@
  *
  */
 
-namespace app\views\View;
+namespace App\Views;
 
 
 abstract class View
