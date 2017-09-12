@@ -97,7 +97,7 @@ class Router
     /**
      * Добавляет маршрут(-ы)
      *
-     * @example: addRoute('/about', 'MainController/about');
+     * @example: addRoute('/about', 'HomeController/about');
      */
     public function addRoute($route, $destination = null)
     {

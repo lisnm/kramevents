@@ -47,7 +47,7 @@
                                         </button>
                                         <ul class="dropdown-menu">
                                             <li><a href="?ctrl=event&act=all">Все категории</a></li>
-                                            <?php
+                                            <!--?php
                                             foreach ($values["categories"] as $categories) {
                                                 echo("<li><a href=\"");
                                                 echo("?ctrl=event&act=some&key=category_id&value=");
@@ -56,7 +56,7 @@
                                                 echo($categories->category_name);
                                                 echo("</a></li>\n");
                                             }
-                                            ?>
+                                            ?-->
                                         </ul>
                                     </div>
                                 </div>

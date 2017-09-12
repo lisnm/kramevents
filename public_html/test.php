@@ -17,21 +17,26 @@ $pdo = $registry->getPdo();
 $ret = $pdo->query("SELECT * FROM events");
 $values = $ret->fetchAll();
 
+//mapper
+require_once("../app/models/EventMapper.php");
+require_once("../app/models/EventCollection.php");
+$mapper = new App\Models\EventMapper();
+$values = $mapper->findAll();
 foreach ($values as $item):?>
     <div class="col-xs-6 col-sm-4 col-md-3">
         <div class="thumbnail">
             <div class="caption">
                 <div class="event-title">
-                    <h2><?= $item["title"]; ?></h2>
+                    <h2><?= $item->getTitle(); ?></h2>
                 </div>
                 <div class="event-description">
-                    <h2><?= $item["description"]; ?></h2>
+                    <h2><?= $item->getDescription(); ?></h2>
                 </div>
                 <div class="event-date">
-                    <?= $item["date_start"]; ?>
+                    <?= $item->getDateStart(); ?>
                 </div>
                 <div class="event-date">
-                    <?= $item["date_end"]; ?>
+                    <?= $item->getDateEnd(); ?>
                 </div>
             </div>
         </div>

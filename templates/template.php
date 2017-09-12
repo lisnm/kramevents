@@ -50,7 +50,7 @@
 <body>
 <div id="container-fluid">
     <?php include("blocks/navbar.php"); ?>
-    <!--?php include 'blocks/' . $content_view; ?-->
+    <?php include 'blocks/' . $content_view; ?>
     <?php include("blocks/footer.php"); ?>
 </div>
 <!--GlobalJavaScripts-->
