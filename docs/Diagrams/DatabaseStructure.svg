@@ -3,20 +3,20 @@
 PUBLIC "-//W3C//DTD SVG 1.1//EN"
        "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg viewBox="15 -5 1485 645" width="1470px" height="650px" xmlns="http://www.w3.org/2000/svg" version="1.1">
-   <line x1="1049" y1="480" x2="1059" y2="480" style="stroke:#333;stroke-width:1;"/>
-   <line x1="1340" y1="150" x2="1350" y2="150" style="stroke:#333;stroke-width:1;"/>
-   <line x1="1059" y1="480" x2="1340" y2="150" style="stroke:#333;stroke-width:1;"/>
-   <line x1="1056.5" y1="480" x2="1052.9644660941" y2="483.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="1056.5" y1="480" x2="1052.9644660941" y2="476.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="1345" y1="150" x2="1341.4644660941" y2="153.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="1345" y1="150" x2="1341.4644660941" y2="146.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="890" y1="180" x2="880" y2="180" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="880" y1="180" x2="880" y2="420" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="882.5" y1="180" x2="886.03553390593" y2="183.53553390593" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="882.5" y1="180" x2="886.03553390593" y2="176.46446609407" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="1049" y1="480" x2="1059" y2="480" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="1340" y1="150" x2="1350" y2="150" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="1059" y1="480" x2="1340" y2="150" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="1056.5" y1="480" x2="1052.9644660941" y2="483.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="1056.5" y1="480" x2="1052.9644660941" y2="476.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="1345" y1="150" x2="1341.4644660941" y2="153.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="1345" y1="150" x2="1341.4644660941" y2="146.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="890" y1="180" x2="880" y2="180" style="stroke:#333;stroke-width:1;"/>
+   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#333;stroke-width:1;"/>
+   <line x1="880" y1="180" x2="880" y2="420" style="stroke:#333;stroke-width:1;"/>
+   <line x1="882.5" y1="180" x2="886.03553390593" y2="183.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="882.5" y1="180" x2="886.03553390593" y2="176.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#333;stroke-width:2;"/>
    <line x1="1049" y1="100" x2="1059" y2="100" style="stroke:#b0b;stroke-width:1;"/>
    <line x1="1340" y1="40" x2="1350" y2="40" style="stroke:#b0b;stroke-width:1;"/>
    <line x1="1059" y1="100" x2="1340" y2="40" style="stroke:#b0b;stroke-width:1;"/>
@@ -31,20 +31,20 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <line x1="1056.5" y1="160" x2="1052.9644660941" y2="156.46446609407" style="stroke:#cb0;stroke-width:2;"/>
    <line x1="1345" y1="150" x2="1341.4644660941" y2="153.53553390593" style="stroke:#cb0;stroke-width:2;"/>
    <line x1="1345" y1="150" x2="1341.4644660941" y2="146.46446609407" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="609" y1="150" x2="619" y2="150" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="619" y1="150" x2="880" y2="420" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="616.5" y1="150" x2="612.96446609407" y2="153.53553390593" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="616.5" y1="150" x2="612.96446609407" y2="146.46446609407" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="609" y1="130" x2="619" y2="130" style="stroke:#cb0;stroke-width:1;"/>
-   <line x1="880" y1="40" x2="890" y2="40" style="stroke:#cb0;stroke-width:1;"/>
-   <line x1="619" y1="130" x2="880" y2="40" style="stroke:#cb0;stroke-width:1;"/>
-   <line x1="616.5" y1="130" x2="612.96446609407" y2="133.53553390593" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="616.5" y1="130" x2="612.96446609407" y2="126.46446609407" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="885" y1="40" x2="881.46446609407" y2="43.535533905933" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="885" y1="40" x2="881.46446609407" y2="36.464466094067" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="609" y1="150" x2="619" y2="150" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="619" y1="150" x2="880" y2="420" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="616.5" y1="150" x2="612.96446609407" y2="153.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="616.5" y1="150" x2="612.96446609407" y2="146.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="609" y1="130" x2="619" y2="130" style="stroke:#333;stroke-width:1;"/>
+   <line x1="880" y1="40" x2="890" y2="40" style="stroke:#333;stroke-width:1;"/>
+   <line x1="619" y1="130" x2="880" y2="40" style="stroke:#333;stroke-width:1;"/>
+   <line x1="616.5" y1="130" x2="612.96446609407" y2="133.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="616.5" y1="130" x2="612.96446609407" y2="126.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="885" y1="40" x2="881.46446609407" y2="43.535533905933" style="stroke:#333;stroke-width:2;"/>
+   <line x1="885" y1="40" x2="881.46446609407" y2="36.464466094067" style="stroke:#333;stroke-width:2;"/>
    <line x1="189" y1="40" x2="199" y2="40" style="stroke:#cb0;stroke-width:1;"/>
    <line x1="880" y1="40" x2="890" y2="40" style="stroke:#cb0;stroke-width:1;"/>
    <line x1="199" y1="40" x2="880" y2="40" style="stroke:#cb0;stroke-width:1;"/>
@@ -52,34 +52,34 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <line x1="196.5" y1="40" x2="192.96446609407" y2="36.464466094067" style="stroke:#cb0;stroke-width:2;"/>
    <line x1="885" y1="40" x2="881.46446609407" y2="43.535533905933" style="stroke:#cb0;stroke-width:2;"/>
    <line x1="885" y1="40" x2="881.46446609407" y2="36.464466094067" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="1350" y1="190" x2="1340" y2="190" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="1340" y1="300" x2="1350" y2="300" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="1340" y1="190" x2="1340" y2="300" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="1342.5" y1="190" x2="1346.0355339059" y2="193.53553390593" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="1342.5" y1="190" x2="1346.0355339059" y2="186.46446609407" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="1345" y1="300" x2="1341.4644660941" y2="303.53553390593" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="1345" y1="300" x2="1341.4644660941" y2="296.46446609407" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="199" y1="320" x2="209" y2="320" style="stroke:#333;stroke-width:1;"/>
-   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#333;stroke-width:1;"/>
-   <line x1="209" y1="320" x2="880" y2="420" style="stroke:#333;stroke-width:1;"/>
-   <line x1="206.5" y1="320" x2="202.96446609407" y2="323.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="206.5" y1="320" x2="202.96446609407" y2="316.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="40" y1="340" x2="30" y2="340" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="30" y1="200" x2="40" y2="200" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="30" y1="340" x2="30" y2="200" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="32.5" y1="340" x2="36.035533905933" y2="343.53553390593" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="32.5" y1="340" x2="36.035533905933" y2="336.46446609407" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="35" y1="200" x2="31.464466094067" y2="203.53553390593" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="35" y1="200" x2="31.464466094067" y2="196.46446609407" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="639" y1="580" x2="649" y2="580" style="stroke:#333;stroke-width:1;"/>
-   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#333;stroke-width:1;"/>
-   <line x1="649" y1="580" x2="880" y2="420" style="stroke:#333;stroke-width:1;"/>
-   <line x1="646.5" y1="580" x2="642.96446609407" y2="583.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="646.5" y1="580" x2="642.96446609407" y2="576.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="1350" y1="190" x2="1340" y2="190" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="1340" y1="300" x2="1350" y2="300" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="1340" y1="190" x2="1340" y2="300" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="1342.5" y1="190" x2="1346.0355339059" y2="193.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="1342.5" y1="190" x2="1346.0355339059" y2="186.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="1345" y1="300" x2="1341.4644660941" y2="303.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="1345" y1="300" x2="1341.4644660941" y2="296.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="199" y1="320" x2="209" y2="320" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="209" y1="320" x2="880" y2="420" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="206.5" y1="320" x2="202.96446609407" y2="323.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="206.5" y1="320" x2="202.96446609407" y2="316.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="40" y1="340" x2="30" y2="340" style="stroke:#333;stroke-width:1;"/>
+   <line x1="30" y1="200" x2="40" y2="200" style="stroke:#333;stroke-width:1;"/>
+   <line x1="30" y1="340" x2="30" y2="200" style="stroke:#333;stroke-width:1;"/>
+   <line x1="32.5" y1="340" x2="36.035533905933" y2="343.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="32.5" y1="340" x2="36.035533905933" y2="336.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="35" y1="200" x2="31.464466094067" y2="203.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="35" y1="200" x2="31.464466094067" y2="196.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="639" y1="580" x2="649" y2="580" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="880" y1="420" x2="890" y2="420" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="649" y1="580" x2="880" y2="420" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="646.5" y1="580" x2="642.96446609407" y2="583.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="646.5" y1="580" x2="642.96446609407" y2="576.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#bbb;stroke-width:2;"/>
    <line x1="199" y1="450" x2="209" y2="450" style="stroke:#b0b;stroke-width:1;"/>
    <line x1="880" y1="420" x2="890" y2="420" style="stroke:#b0b;stroke-width:1;"/>
    <line x1="209" y1="450" x2="880" y2="420" style="stroke:#b0b;stroke-width:1;"/>
@@ -87,13 +87,13 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <line x1="206.5" y1="450" x2="202.96446609407" y2="446.46446609407" style="stroke:#b0b;stroke-width:2;"/>
    <line x1="885" y1="420" x2="881.46446609407" y2="423.53553390593" style="stroke:#b0b;stroke-width:2;"/>
    <line x1="885" y1="420" x2="881.46446609407" y2="416.46446609407" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="40" y1="430" x2="30" y2="430" style="stroke:#cb0;stroke-width:1;"/>
-   <line x1="30" y1="540" x2="40" y2="540" style="stroke:#cb0;stroke-width:1;"/>
-   <line x1="30" y1="430" x2="30" y2="540" style="stroke:#cb0;stroke-width:1;"/>
-   <line x1="32.5" y1="430" x2="36.035533905933" y2="433.53553390593" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="32.5" y1="430" x2="36.035533905933" y2="426.46446609407" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="35" y1="540" x2="31.464466094067" y2="543.53553390593" style="stroke:#cb0;stroke-width:2;"/>
-   <line x1="35" y1="540" x2="31.464466094067" y2="536.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="40" y1="430" x2="30" y2="430" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="30" y1="540" x2="40" y2="540" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="30" y1="430" x2="30" y2="540" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="32.5" y1="430" x2="36.035533905933" y2="433.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="32.5" y1="430" x2="36.035533905933" y2="426.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="35" y1="540" x2="31.464466094067" y2="543.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="35" y1="540" x2="31.464466094067" y2="536.46446609407" style="stroke:#c00;stroke-width:2;"/>
    <rect width="159" height="20" x="1350" y="10" style="fill:#007;stroke:black;"/>
    <text width="159" height="20" x="1355" y="24" style="fill:#fff;" font-family="Arial" font-size="16px"> categories</text>
    <rect width="159" height="20" x="1350" y="30" style="fill:#aea;stroke:black;"/>
@@ -169,7 +169,7 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <rect width="159" height="20" x="1350" y="120" style="fill:#007;stroke:black;"/>
    <text width="159" height="20" x="1355" y="134" style="fill:#fff;" font-family="Arial" font-size="16px"> places</text>
    <rect width="159" height="20" x="1350" y="140" style="fill:#aea;stroke:black;"/>
-   <text width="159" height="20" x="1355" y="154" style="fill:black;" font-family="Arial" font-size="16px">place_id</text>
+   <text width="159" height="20" x="1355" y="154" style="fill:black;" font-family="Arial" font-size="16px">id</text>
    <rect width="159" height="20" x="1350" y="160" style="fill:none;stroke:black;"/>
    <text width="159" height="20" x="1355" y="174" style="fill:black;" font-family="Arial" font-size="16px">name</text>
    <rect width="159" height="20" x="1350" y="180" style="fill:none;stroke:black;"/>
