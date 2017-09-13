@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 13, 2017 at 07:00 AM
+-- Generation Time: Sep 13, 2017 at 07:57 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -151,6 +151,27 @@ INSERT INTO `events` (`id`, `title`, `description`, `category_id`, `date_start`,
 (16, 'Презентация социально направленных IT-проектов', '\r\nПриглашаем Вас в \"GeekBunker\".\r\n участниками проекта будут представлены три выпускные проекты, которые могут стать началом для решения социально-значимых проблем для города Краматорска:\r\n1. Онлайн система \"Электронный запись к врачу\"\r\n2. Информационная система о работе транспорта города\r\n3. Система информирования о мероприятиях, проходящих в г.Краматорск.\r\nВ течение 5 месяцев простые люди, не связанные с IT учились использованию языков программирования, технологий и алгоритмов с одной целью - получить навыки\r\n достаточные для дальнейшего саморазвития и реализации себя как полноценного IT-специалиста.\r\nРезультаты финального задания проекта, испытания для выпускников - реализовать полноценный продукт.\r\nСредний возраст студентов - 30 лет.\r\n', 8, '2017-08-03 19:00:00', '2017-08-03 20:00:00', 1, 1),
 (17, 'Yoga Open Air Sundays в Краматорске', '\r\nПриглашаем Вас на Yoga Open Air Sundays - это открытые воскресные занятия йогой на природе. \r\nВ августе приглашаем краматорчан на бесплатные занятия 6, 13, 20, 27 августа с 10:00 до 12:00 в парке Юбилейный (встречаемся в 9:45 перед входом в парк аттракционов). \r\nИнструктор: Людмила Мандзяк, Украинская Федерация Йоги.\r\nС собой иметь удобную спортивную одежду и коврик/каремат.\r\nФорма для регистрации https://goo.gl/88b6L9.\r\n', 7, '2017-08-06 10:00:00', '2017-08-20 12:00:00', 4, 4),
 (18, 'Тренинговая игра \"Вершина отношений\"', '\r\nПриходите в \"GeekBunker\" поиграть в настольную игру для взрослых \"Вершина отношений\". \r\nОт вас: бумага, ручка, хорошее настроение. \r\nОт меня: чай/кофе, печеньки, новые идеи. \r\nМы играем, чтобы понять как улучшить/изменить/построить классные отношения с близкими. Время игры с 12 до 16ч. Предварительная запись обязательна: в личные сообщения или в мероприятие.\r\nОплата свободная (кидаем в банку \"на развитие\" столько, сколько по вашему мнению стоит полученная информация).\r\nПринимаю в игру ДО 5 ЧЕЛОВЕК.\r\n', 8, '2017-08-06 12:00:00', '2017-08-06 16:00:00', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event_company`
+--
+-- Creation: Sep 13, 2017 at 07:40 AM
+--
+
+CREATE TABLE `event_company` (
+  `event_id` int(10) UNSIGNED NOT NULL,
+  `company_id` int(10) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- RELATIONSHIPS FOR TABLE `event_company`:
+--   `company_id`
+--       `companies` -> `id`
+--   `event_id`
+--       `events` -> `id`
+--
 
 -- --------------------------------------------------------
 
@@ -500,6 +521,13 @@ ALTER TABLE `events`
   ADD KEY `place_id` (`place_id`);
 
 --
+-- Indexes for table `event_company`
+--
+ALTER TABLE `event_company`
+  ADD UNIQUE KEY `INDEX_NAME` (`event_id`,`company_id`),
+  ADD KEY `company_key` (`company_id`);
+
+--
 -- Indexes for table `location`
 --
 ALTER TABLE `location`
@@ -610,6 +638,13 @@ ALTER TABLE `events`
   ADD CONSTRAINT `event` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`),
   ADD CONSTRAINT `events_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `events_ibfk_2` FOREIGN KEY (`place_id`) REFERENCES `places` (`place_id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `event_company`
+--
+ALTER TABLE `event_company`
+  ADD CONSTRAINT `company_key` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`),
+  ADD CONSTRAINT `event_key` FOREIGN KEY (`event_id`) REFERENCES `events` (`id`);
 
 --
 -- Constraints for table `pictures`
