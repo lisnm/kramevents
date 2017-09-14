@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 13, 2017 at 07:57 AM
+-- Generation Time: Sep 13, 2017 at 11:19 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -29,7 +29,7 @@ USE `id2441188_kramevents`;
 --
 -- Table structure for table `categories`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `categories` (
@@ -61,7 +61,8 @@ INSERT INTO `categories` (`id`, `category_name`, `parent_id`) VALUES
 --
 -- Table structure for table `companies`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `companies` (
@@ -77,7 +78,7 @@ CREATE TABLE `companies` (
 --
 -- RELATIONSHIPS FOR TABLE `companies`:
 --   `place_id`
---       `places` -> `place_id`
+--       `places` -> `id`
 --
 
 --
@@ -104,7 +105,8 @@ INSERT INTO `companies` (`id`, `fullname`, `description`, `place_id`, `email`, `
 --
 -- Table structure for table `events`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `events` (
@@ -125,7 +127,7 @@ CREATE TABLE `events` (
 --   `category_id`
 --       `categories` -> `id`
 --   `place_id`
---       `places` -> `place_id`
+--       `places` -> `id`
 --
 
 --
@@ -157,7 +159,7 @@ INSERT INTO `events` (`id`, `title`, `description`, `category_id`, `date_start`,
 --
 -- Table structure for table `event_company`
 --
--- Creation: Sep 13, 2017 at 07:40 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `event_company` (
@@ -178,7 +180,8 @@ CREATE TABLE `event_company` (
 --
 -- Table structure for table `location`
 --
--- Creation: Sep 13, 2017 at 05:22 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `location` (
@@ -219,7 +222,8 @@ INSERT INTO `location` (`id`, `city`, `country`, `latitude`, `longitude`, `stree
 --
 -- Table structure for table `pictures`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `pictures` (
@@ -298,11 +302,12 @@ INSERT INTO `pictures` (`event_id`, `picture_url`) VALUES
 --
 -- Table structure for table `places`
 --
--- Creation: Sep 13, 2017 at 05:16 AM
+-- Creation: Sep 13, 2017 at 11:16 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `places` (
-  `place_id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL COMMENT 'name',
   `location_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -317,7 +322,7 @@ CREATE TABLE `places` (
 -- Dumping data for table `places`
 --
 
-INSERT INTO `places` (`place_id`, `name`, `location_id`) VALUES
+INSERT INTO `places` (`id`, `name`, `location_id`) VALUES
 (1, 'Гік бункер', 1),
 (2, 'Kинотеатр \"Родина\".', 2),
 (3, 'Городской Дворец Культуры и Техники НКМЗ.', 3),
@@ -337,7 +342,8 @@ INSERT INTO `places` (`place_id`, `name`, `location_id`) VALUES
 --
 -- Table structure for table `social_networks`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `social_networks` (
@@ -366,7 +372,8 @@ INSERT INTO `social_networks` (`company_id`, `social_network_id`, `company_netwo
 --
 -- Table structure for table `social_networks_list`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `social_networks_list` (
@@ -393,7 +400,8 @@ INSERT INTO `social_networks_list` (`id`, `network`, `network_url`) VALUES
 --
 -- Table structure for table `telephone_numbers`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `telephone_numbers` (
@@ -431,7 +439,8 @@ INSERT INTO `telephone_numbers` (`company_id`, `telephone`) VALUES
 --
 -- Table structure for table `users`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `users` (
@@ -463,7 +472,8 @@ INSERT INTO `users` (`id`, `login`, `hash`, `email`, `picture_url`) VALUES
 --
 -- Table structure for table `users_companies`
 --
--- Creation: Sep 13, 2017 at 04:04 AM
+-- Creation: Sep 13, 2017 at 10:22 AM
+-- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `users_companies` (
@@ -543,7 +553,7 @@ ALTER TABLE `pictures`
 -- Indexes for table `places`
 --
 ALTER TABLE `places`
-  ADD PRIMARY KEY (`place_id`),
+  ADD PRIMARY KEY (`id`),
   ADD KEY `location_id` (`location_id`),
   ADD KEY `location_id_2` (`location_id`);
 
@@ -607,7 +617,7 @@ ALTER TABLE `location`
 -- AUTO_INCREMENT for table `places`
 --
 ALTER TABLE `places`
-  MODIFY `place_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `social_networks_list`
@@ -629,7 +639,7 @@ ALTER TABLE `users`
 -- Constraints for table `companies`
 --
 ALTER TABLE `companies`
-  ADD CONSTRAINT `companies_ibfk_1` FOREIGN KEY (`place_id`) REFERENCES `places` (`place_id`);
+  ADD CONSTRAINT `companies_ibfk_1` FOREIGN KEY (`place_id`) REFERENCES `places` (`id`);
 
 --
 -- Constraints for table `events`
@@ -637,7 +647,7 @@ ALTER TABLE `companies`
 ALTER TABLE `events`
   ADD CONSTRAINT `event` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`),
   ADD CONSTRAINT `events_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `events_ibfk_2` FOREIGN KEY (`place_id`) REFERENCES `places` (`place_id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `events_ibfk_2` FOREIGN KEY (`place_id`) REFERENCES `places` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `event_company`
