@@ -84,7 +84,9 @@ class Registry
                 throw new \Exception("No password");
             }
             $this->pdo = new \PDO($dsn, $username, $password);
+            //TODO: Вынести атрибуты в конфиг файл
             $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            $this->pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_NAMED);
         }
 
         return $this->pdo;
