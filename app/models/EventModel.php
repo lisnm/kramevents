@@ -3,9 +3,12 @@
 namespace App\Models;
 require_once("/../base/Registry.php");
 require_once("Model.php");
+require_once("PictureModel.php");
 
 use app\base\Registry;
 
+define('MAX_TITLE', '30');
+define('MAX_DESCRIPTION', '120');
 /**
  * Class EventModel
  * @package App\Models
@@ -47,6 +50,16 @@ class EventModel extends Model
     public function setDescription($description)
     {
         $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     *
+     * Возвращает часть описания.
+     */
+    public function getShortDescription()
+    {
+        return $this->getShortest($this->description,MAX_DESCRIPTION);
     }
 
     /**
@@ -189,7 +202,6 @@ class EventModel extends Model
         return $this->places;
     }
 
-
     /**
      * @return mixed
      */
@@ -217,11 +229,44 @@ class EventModel extends Model
     }
 
     /**
+     * @return mixed
+     */
+    public function getShortTitle()
+    {
+        return $this->getShortest($this->title, MAX_TITLE);
+    }
+
+    /**
+     * @param $str :string
+     * @param $max_len :int
+     * @return string
+     */
+    private function getShortest($str, $max_len)
+    {
+        $ellipsis = '...';
+        if (mb_strlen($str) > (int)$max_len)
+            return mb_substr($str, null,(int)$max_len - mb_strlen($ellipsis)) . $ellipsis;
+        return $str;
+    }
+
+    public function getMainPicture()
+    {
+        $pictures = $this->getPictures();
+        if (empty($pictures)) {
+            return null;
+        }
+        return $pictures->current()->getPicture();
+    }
+
+    /**
      * @return null
      */
     public function getPictures()
     {
-        return $this->pictures;
+        if (isset($this->pictures)) {
+            return $this->pictures;
+        }
+        return null;
     }
 
     /**

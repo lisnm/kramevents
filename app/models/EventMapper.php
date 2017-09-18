@@ -5,6 +5,7 @@ namespace App\Models;
 require_once("Mapper.php");
 require_once("EventModel.php");
 require_once("EventCollection.php");
+require_once("PictureMapper.php");
 
 /**
  * Class EventMapper
@@ -56,6 +57,12 @@ class EventMapper extends Mapper
      */
     public function update(Model $object)
     {
+        $class = $this->targetClass();
+
+        if (!($object instanceof $class)) {
+            throw new \Exception("This is a {$class} model");
+        }
+
         $values = [
             $object->getTitle(),
             $object->getId(),
@@ -112,9 +119,9 @@ class EventMapper extends Mapper
         //$obj->setSubCategory($sub_category);
         //$company = new CompanyModel();
         //$obj->setCompany($company)
-        //$pictures = new PictureMapper();
-        //$pictures_collection = $pictures->findById($raw['id']);
-        // $obj->setPictures($pictures_collection)
+        $pict_map = new PictureMapper();
+        $pictures = $pict_map->findPicturesByEvent($raw['id']);
+        $obj->setPictures($pictures);
         // $place = new PlaceModel();
         // $obj->setPlace($place);
 

@@ -10,10 +10,10 @@
                         <div class="thumbnail">
                             <div class="caption">
                                 <div class="event-title">
-                                    <h2><?= $item->getTitle(); ?></h2>
+                                    <h2><?= $item->getShortTitle(); ?></h2>
                                 </div>
                                 <div class="event-description">
-                                    <?= $item->getCategory(); ?>
+                                    <?= $item->getShortDescription(); ?>
                                 </div>
                                 <div class="event-date">
                                     <h3><?= $item->getDateStart(); ?></h3>
@@ -23,8 +23,8 @@
                             </div>
                             <div class="event-picture">
                                 <div class="event-picture-wrap"
-                                     style="background-image: url('upload/<?= $item->getPictures();?>');background-size: cover;">
-                                    <img src='upload/<?= $item->getPictures(); ?>' alt="" title="">
+                                     style="background-image: url('upload/<?= $item->getMainPicture();?>');background-size: cover;">
+                                    <img src='upload/<?= $item->getMainPicture(); ?>' alt="" title="">
                                 </div>
                             </div>
                         </div>
