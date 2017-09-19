@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 15, 2017 at 12:12 PM
+-- Generation Time: Sep 19, 2017 at 09:29 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -28,8 +28,6 @@ USE `id2441188_kramevents`;
 
 --
 -- Table structure for table `categories`
---
--- Creation: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `categories` (
@@ -60,8 +58,6 @@ INSERT INTO `categories` (`id`, `category_name`, `parent_id`) VALUES
 
 --
 -- Table structure for table `companies`
---
--- Creation: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `companies` (
@@ -103,8 +99,6 @@ INSERT INTO `companies` (`id`, `fullname`, `description`, `place_id`, `email`, `
 
 --
 -- Table structure for table `events`
---
--- Creation: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `events` (
@@ -157,8 +151,6 @@ INSERT INTO `events` (`id`, `title`, `description`, `category_id`, `date_start`,
 --
 -- Table structure for table `event_company`
 --
--- Creation: Sep 13, 2017 at 10:22 AM
---
 
 CREATE TABLE `event_company` (
   `event_id` int(10) UNSIGNED NOT NULL,
@@ -178,8 +170,6 @@ CREATE TABLE `event_company` (
 --
 -- Table structure for table `location`
 --
--- Creation: Sep 13, 2017 at 10:22 AM
---
 
 CREATE TABLE `location` (
   `id` int(10) UNSIGNED NOT NULL COMMENT 'id',
@@ -189,7 +179,7 @@ CREATE TABLE `location` (
   `longitude` decimal(9,6) NOT NULL COMMENT 'geo',
   `street` varchar(255) DEFAULT NULL COMMENT 'street',
   `house` smallint(6) DEFAULT NULL COMMENT 'house number',
-  `zip` varchar(20) NOT NULL COMMENT 'postalcode'
+  `zip` varchar(20) DEFAULT NULL COMMENT 'postalcode'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -218,8 +208,6 @@ INSERT INTO `location` (`id`, `city`, `country`, `latitude`, `longitude`, `stree
 
 --
 -- Table structure for table `pictures`
---
--- Creation: Sep 15, 2017 at 11:19 AM
 --
 
 CREATE TABLE `pictures` (
@@ -299,8 +287,6 @@ INSERT INTO `pictures` (`id`, `event_id`, `picture_url`) VALUES
 --
 -- Table structure for table `places`
 --
--- Creation: Sep 13, 2017 at 11:16 AM
---
 
 CREATE TABLE `places` (
   `id` int(10) UNSIGNED NOT NULL,
@@ -338,8 +324,6 @@ INSERT INTO `places` (`id`, `name`, `location_id`) VALUES
 --
 -- Table structure for table `social_networks`
 --
--- Creation: Sep 13, 2017 at 10:22 AM
---
 
 CREATE TABLE `social_networks` (
   `company_id` int(10) UNSIGNED NOT NULL COMMENT 'company',
@@ -367,8 +351,6 @@ INSERT INTO `social_networks` (`company_id`, `social_network_id`, `company_netwo
 --
 -- Table structure for table `social_networks_list`
 --
--- Creation: Sep 13, 2017 at 10:22 AM
---
 
 CREATE TABLE `social_networks_list` (
   `id` int(10) UNSIGNED NOT NULL,
@@ -393,8 +375,6 @@ INSERT INTO `social_networks_list` (`id`, `network`, `network_url`) VALUES
 
 --
 -- Table structure for table `telephone_numbers`
---
--- Creation: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `telephone_numbers` (
@@ -432,8 +412,6 @@ INSERT INTO `telephone_numbers` (`company_id`, `telephone`) VALUES
 --
 -- Table structure for table `users`
 --
--- Creation: Sep 13, 2017 at 10:22 AM
---
 
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
@@ -463,8 +441,6 @@ INSERT INTO `users` (`id`, `login`, `hash`, `email`, `picture_url`) VALUES
 
 --
 -- Table structure for table `users_companies`
---
--- Creation: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `users_companies` (
