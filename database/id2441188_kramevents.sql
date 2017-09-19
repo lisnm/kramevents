@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 13, 2017 at 11:19 AM
+-- Generation Time: Sep 15, 2017 at 12:12 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -62,7 +62,6 @@ INSERT INTO `categories` (`id`, `category_name`, `parent_id`) VALUES
 -- Table structure for table `companies`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `companies` (
@@ -106,7 +105,6 @@ INSERT INTO `companies` (`id`, `fullname`, `description`, `place_id`, `email`, `
 -- Table structure for table `events`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `events` (
@@ -181,7 +179,6 @@ CREATE TABLE `event_company` (
 -- Table structure for table `location`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `location` (
@@ -222,11 +219,11 @@ INSERT INTO `location` (`id`, `city`, `country`, `latitude`, `longitude`, `stree
 --
 -- Table structure for table `pictures`
 --
--- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
+-- Creation: Sep 15, 2017 at 11:19 AM
 --
 
 CREATE TABLE `pictures` (
+  `id` int(10) UNSIGNED NOT NULL,
   `event_id` int(10) UNSIGNED NOT NULL COMMENT 'event',
   `picture_url` varchar(255) NOT NULL COMMENT 'event''s picture'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -241,61 +238,61 @@ CREATE TABLE `pictures` (
 -- Dumping data for table `pictures`
 --
 
-INSERT INTO `pictures` (`event_id`, `picture_url`) VALUES
-(1, '1.jpg'),
-(1, '1_1.jpg'),
-(1, '1_2.jpg'),
-(2, '2.jpg'),
-(2, '2_1.jpg'),
-(2, '2_2.jpg'),
-(3, '3.jpg'),
-(3, '3_1.jpg'),
-(3, '3_2.jpg'),
-(4, '4.jpg'),
-(4, '4_1.jpg'),
-(4, '4_2.jpg'),
-(5, '5.jpg'),
-(5, '5_1.jpg'),
-(5, '5_2.jpg'),
-(6, '6.jpg'),
-(6, '6_1.jpg'),
-(6, '6_2.jpg'),
-(7, '7.jpg'),
-(7, '7_1.jpg'),
-(7, '7_2.jpg'),
-(8, '8.jpg'),
-(8, '8_1.jpg'),
-(8, '8_2.jpg'),
-(9, '9.jpg'),
-(9, '9_1.jpg'),
-(9, '9_2.jpg'),
-(10, '10.jpg'),
-(10, '10_1.jpg'),
-(10, '10_2.jpg'),
-(11, '11.jpg'),
-(11, '11_1.jpg'),
-(11, '11_2.jpg'),
-(12, '12.jpg'),
-(12, '12_1.jpg'),
-(12, '12_2.jpg'),
-(13, '13.jpg'),
-(13, '13_1.jpg'),
-(13, '13_2.jpg'),
-(14, '14.jpg'),
-(14, '14_1.jpg'),
-(14, '14_2.jpg'),
-(15, '15.jpg'),
-(15, '15_1.jpg'),
-(15, '15_2.jpg'),
-(16, '16.jpg'),
-(16, '16_1.jpg'),
-(16, '16_2.jpg'),
-(17, '17.jpg'),
-(17, '17_1.jpg'),
-(17, '17_2.jpg'),
-(18, '18.jpg'),
-(18, '18_1.jpg'),
-(18, '18_2.jpg');
+INSERT INTO `pictures` (`id`, `event_id`, `picture_url`) VALUES
+(1, 1, '1.jpg'),
+(2, 1, '1_1.jpg'),
+(3, 1, '1_2.jpg'),
+(4, 2, '2.jpg'),
+(5, 2, '2_1.jpg'),
+(6, 2, '2_2.jpg'),
+(7, 3, '3.jpg'),
+(8, 3, '3_1.jpg'),
+(9, 3, '3_2.jpg'),
+(10, 4, '4.jpg'),
+(11, 4, '4_1.jpg'),
+(12, 4, '4_2.jpg'),
+(13, 5, '5.jpg'),
+(14, 5, '5_1.jpg'),
+(15, 5, '5_2.jpg'),
+(16, 6, '6.jpg'),
+(17, 6, '6_1.jpg'),
+(18, 6, '6_2.jpg'),
+(19, 7, '7.jpg'),
+(20, 7, '7_1.jpg'),
+(21, 7, '7_2.jpg'),
+(22, 8, '8.jpg'),
+(23, 8, '8_1.jpg'),
+(24, 8, '8_2.jpg'),
+(25, 9, '9.jpg'),
+(26, 9, '9_1.jpg'),
+(27, 9, '9_2.jpg'),
+(28, 10, '10.jpg'),
+(29, 10, '10_1.jpg'),
+(30, 10, '10_2.jpg'),
+(31, 11, '11.jpg'),
+(32, 11, '11_1.jpg'),
+(33, 11, '11_2.jpg'),
+(34, 12, '12.jpg'),
+(35, 12, '12_1.jpg'),
+(36, 12, '12_2.jpg'),
+(37, 13, '13.jpg'),
+(38, 13, '13_1.jpg'),
+(39, 13, '13_2.jpg'),
+(40, 14, '14.jpg'),
+(41, 14, '14_1.jpg'),
+(42, 14, '14_2.jpg'),
+(43, 15, '15.jpg'),
+(44, 15, '15_1.jpg'),
+(45, 15, '15_2.jpg'),
+(46, 16, '16.jpg'),
+(47, 16, '16_1.jpg'),
+(48, 16, '16_2.jpg'),
+(49, 17, '17.jpg'),
+(50, 17, '17_1.jpg'),
+(51, 17, '17_2.jpg'),
+(52, 18, '18.jpg'),
+(53, 18, '18_1.jpg'),
+(54, 18, '18_2.jpg');
 
 -- --------------------------------------------------------
 
@@ -303,7 +300,6 @@ INSERT INTO `pictures` (`event_id`, `picture_url`) VALUES
 -- Table structure for table `places`
 --
 -- Creation: Sep 13, 2017 at 11:16 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `places` (
@@ -343,7 +339,6 @@ INSERT INTO `places` (`id`, `name`, `location_id`) VALUES
 -- Table structure for table `social_networks`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `social_networks` (
@@ -373,7 +368,6 @@ INSERT INTO `social_networks` (`company_id`, `social_network_id`, `company_netwo
 -- Table structure for table `social_networks_list`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `social_networks_list` (
@@ -401,7 +395,6 @@ INSERT INTO `social_networks_list` (`id`, `network`, `network_url`) VALUES
 -- Table structure for table `telephone_numbers`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `telephone_numbers` (
@@ -440,7 +433,6 @@ INSERT INTO `telephone_numbers` (`company_id`, `telephone`) VALUES
 -- Table structure for table `users`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `users` (
@@ -473,7 +465,6 @@ INSERT INTO `users` (`id`, `login`, `hash`, `email`, `picture_url`) VALUES
 -- Table structure for table `users_companies`
 --
 -- Creation: Sep 13, 2017 at 10:22 AM
--- Last update: Sep 13, 2017 at 10:22 AM
 --
 
 CREATE TABLE `users_companies` (
@@ -547,6 +538,8 @@ ALTER TABLE `location`
 -- Indexes for table `pictures`
 --
 ALTER TABLE `pictures`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `event_id_2` (`event_id`,`picture_url`),
   ADD KEY `event_id` (`event_id`);
 
 --
@@ -612,6 +605,12 @@ ALTER TABLE `events`
 --
 ALTER TABLE `location`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'id', AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `pictures`
+--
+ALTER TABLE `pictures`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `places`
