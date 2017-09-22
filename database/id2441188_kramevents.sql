@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 19, 2017 at 09:29 AM
+-- Generation Time: Sep 22, 2017 at 09:38 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -66,8 +66,8 @@ CREATE TABLE `companies` (
   `description` varchar(255) NOT NULL COMMENT 'short description',
   `place_id` int(10) UNSIGNED NOT NULL COMMENT 'place of head office',
   `email` varchar(255) DEFAULT NULL COMMENT '@',
-  `www` varchar(255) DEFAULT NULL COMMENT 'company''s url',
-  `picture_url` varchar(255) DEFAULT NULL COMMENT 'company''s picture'
+  `url` varchar(255) DEFAULT NULL COMMENT 'company''s url',
+  `logo` varchar(255) DEFAULT NULL COMMENT 'company''s picture'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Table for company';
 
 --
@@ -80,7 +80,7 @@ CREATE TABLE `companies` (
 -- Dumping data for table `companies`
 --
 
-INSERT INTO `companies` (`id`, `fullname`, `description`, `place_id`, `email`, `www`, `picture_url`) VALUES
+INSERT INTO `companies` (`id`, `fullname`, `description`, `place_id`, `email`, `url`, `logo`) VALUES
 (1, 'GeekBunker', 'Гік бункер - освітній хаб, коворкинг та IT-школа у місті Краматорську.', 1, 'https://www.facebook.com/GeekBunkerUA/', '', 'img_id1.jpg'),
 (2, '\"Родина\"', 'Kинотеатр \"Родина\".', 2, 'rodina_kino@mail.ru', 'http://rodina.mk/', 'img_id2.jpg'),
 (3, 'ДК и Т НКМЗ', 'Городской Дворец Культуры и Техники НКМЗ.', 3, 'nspdkit@gmail.com', '', 'img_id3.jpg'),
